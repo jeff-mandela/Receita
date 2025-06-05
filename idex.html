@@ -1,106 +1,145 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <title>Receita de Omelete</title>
-</head>
-<body>
-    <div>
-        <img src="./assets/image-omelette.jpeg" alt="imagem de uma omelete recheado de folhas verdes e vegetais">
-        <h1>Receita de Omelete Simples</h1>
-        <p>Um prato fácil e rápido, perfeito para qualquer refeição. Esta omelete clássica combina ovos batidos cozidos à perfeição, opcionalmente recheados com sua escolha de queijo, legumes ou carnes.</p>
-         <div class="Tempo">
-            <h2> Tempo de preparo</h2>
-         
-            <ul>
-                <li>
-                    <strong>Total:</strong> Aproximadamente 19 minutos
-                </li>
-                <li>
-                    <strong>Preparo</strong> 5 minutos
-                </li>
-                <li><strong>cozimento</strong> 5 minutos
-                </li>
-            </ul>
-        </div>
-         <div class="Ingredientes">
-                <h2>Ingredientes</h2>
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+body{
+    background-color: #f3e5d7;
+}
 
-                <ul>
-                    <li>2-3 ovos grandes</li>
-                    <li>Sal, a gosto</li>
-                    <li>Pimenta, a gosto</li>
-                    <li>uma colher de sopa de manteiga ou óleo</li>
-                    <li>Recheios opcionais: queijo, carnes cozidos, ervas.</li>
-
-                </ul>
-            </div>
-            <hr>
-                   <div class="Modo">
-            <h2>Modo de preparo</h2>
-         <ol>
-            <li>
-                <strong>Bata os ovos</strong> Em uma tigela, bata os ovos com uma pitada de sal e pimenta até que estejam bem misturados. Você pode adicionar uma colher de sopa de água ou leite para obter uma textura mais fofa.
-            </li>
-        </li>
-        <li>
-           <strong>Aqueça a frigideira:</strong> Coloque uma frigideira antiaderente em fogo médio e adicione manteiga ou óleo.
-        </li>
-        <li>
-            <strong>Cozinhe o omelete</strong> Assim que a manteiga estiver derretida e borbulhando, despeje os ovos. Icline a frigideira para garantir que os ovos cubram uniformemente a superfície.
-        </li>
-        <li>
-            <strong>Adicione os recheios (opcional)</strong> Quando os ovos começarem a firmar nas bordas, mas ainda estiverem um pouco liquidos no centro, espalhe os recheios escolhidos sobre uma metade do omelete.
-
-        </li>
-        <li>
-            <strong>Dobre e sirva:</strong>Enquanto a omelete continua a cozinhar, cuidadosamente levante uma borda e dobre sobre os recheios. Deixe cozinhar por mais um minuto, em seguida, deslize-a para um prato.
-
-        </li>
-        <li>
-            <strong>Saboreie</strong> Sirva quente,com sal e pimenta adicionais, se necessário.
-        </li>
-           </ol>
-           </div>
-           <hr>
-           <div class="informacoes">
-    <h2>informações nutricionais</h2>
-    <p>A tabela abaixo mostra os valores nutricionais por porção sem os recheios adicionais</p>
-
-    <table>
-<tr>
-
-<th>Calorias</th>
-<td>277kcal</td>
-
-</tr>
-<tr>
-    <th>Carboidratos</th>
-    <td>og</td>
-</tr>
-<tr>
-    <th>Proteína</th>
-    <td>20g</td>
-</tr>
-<tr>
-    <th>Gorduras</th>
-    <td>22g</td>
-</tr>
+body > div{
+    background-color: #fff;
+    max-width: 736px;
+    margin-inline: auto;
+    margin-block: 66px;
+    padding: 40px;
+    border-radius: 24px;
+}
+    div img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 40px;
 
 
+    }
+h1, h2 {
+    font-family: 'lora' , serif;
+    
+}
+h1{
+    font-size: 40px;
+    color: #312e2c;
+    line-height: 100%;
+margin-bottom: 24px;
+}
+
+p, li, th, td{
+  font-family: 'Outfit' , sans-serif;
+}
+
+p{
+    color: #5f564d;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.tempo {
+background-color: #fff7fb;
+padding: 28px;
+border-radius: 12px;
+margin-bottom: 16px;
+}
+
+.tempo h2 {
+font-size: 20px;
+font-weight: 600;
+line-height: 100%;
+font-family: 'Outfit' , sans-serif;
+color: #7a284e;
+margin-bottom: 16px;
+
+}
+li{
+    padding-left: 10px;
+    color: #5f564d;
+    line-height: 150%;
+}
+
+li + li {
+    margin-left: 8px;
+}
+ul, ol {
+  margin-left: 20px;
+}
+
+.tempo li::marker{
+color: #c2236d;
+font-size: 12px;
+
+}
+
+h2{
+    font-size: 26px;
+    color: #854632;
+    line-height: 100%;
+    margin-bottom: 24px;
 
 
+}
 
-    </table>
+.ingredientes li::marker{
+    font-size: 12px;
+    color: #854632;
+}
+hr{
+    border:1px solid #e3ddd7;
+    margin-block: 32px;
+}
 
+.modo li::marker {
 
+color: #854632;
+font-weight: 700;
 
-</div>
-    </div>
-</body>
-</html>
+}
+.informacoes p {
+    margin-bottom: 24px; 
+}
+table {
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px selid #e3ddd7;
+    width: 100%;
+}
+tr{
+    display: flex;
+}
+th{
+    text-align: left;
+    margin-left: 32px;
+    font-weight: 400;
+    color: #5f564d;
+    line-height: 150%;
+}
+td{
+    padding-left: 16px;
+    font-weight: 700;
+    color: #854632;
+    line-height: 150%;
+}
+
+tr + tr th,
+tr + tr td {
+    padding-block: 12px;
+}
+tr:nth-of-type(1) th,
+tr:nth-of-type (1) td {
+    padding-botton: 12px;
+}
+tr:nth-of-type(4)th,
+tr:nth-of-type(4) td{
+    border: none;
+}
