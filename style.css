@@ -68,7 +68,7 @@ li{
 }
 
 li + li {
-    margin-left: 8px;
+    margin-top: 8px;
 }
 ul, ol {
   margin-left: 20px;
@@ -113,7 +113,7 @@ table {
 }
 
 th, td {
-    border-bottom: 1px selid #e3ddd7;
+    border-bottom: 1px solid #e3ddd7;
     width: 100%;
 }
 tr{
@@ -141,7 +141,7 @@ tr:nth-of-type(1) th,
 tr:nth-of-type(1) td {
     padding-bottom: 12px;
 }
-tr:nth-of-type(4)th,
+tr:nth-of-type(4) th,
 tr:nth-of-type(4) td{
     border: none;
 }
